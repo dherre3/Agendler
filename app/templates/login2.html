@@ -1,0 +1,31 @@
+<ion-view view-title="Login">
+    <ion-content padding="true" scroll="false" class="has-header">
+
+        <div style="text-align:center;color:blue">
+            <h3>Organize, collaborate, succeed!</h3>
+        </div>
+        <form>
+            <div align="center">
+            <img class="my-image-login"src="https://ksr-ugc.imgix.net/projects/709527/photo-original.png?v=1397850545&amp;w=1536&amp;h=1152&amp;fit=crop&amp;auto=format&amp;q=92&amp;s=a9e5482f2de069786a0ee8a564ee20a8" style="width: 90%; height: auto;">
+            </div>
+            <ion-list></ion-list>
+            <label class="item item-input" name="signin">
+                <span class="input-label">Email:</span>
+                <input ng-model="signin.email" type="text" placeholder="Email">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Password:</span>
+                <input ng-model="signin.password" type="password" placeholder="Password">
+            </label>
+        </form>
+        <div>
+            <p style="margin-top:15px;text-align:center">
+             	<a href="#/appforms/signup">Sign Up!</a><br>
+                <a href>Forgot Password?</a>
+
+               
+            </p>
+        </div>
+        <button class="button button-stable button-block" ng-click="signin()">Log in</button>
+    </ion-content>
+</ion-view>
